@@ -1,0 +1,69 @@
+{
+  "categories": [
+    {
+      "id": 0,
+      "name": "Articulated Vehicle"
+    },
+    {
+      "id": 1,
+      "name": "Green Minibus\u200b"
+    },
+    {
+      "id": 2,
+      "name": "Heavy Goods Vehicle\u200b"
+    },
+    {
+      "id": 3,
+      "name": "Lantau Taxi"
+    },
+    {
+      "id": 4,
+      "name": "Light Goods Vehicle"
+    },
+    {
+      "id": 5,
+      "name": "Medium Goods Vehicle"
+    },
+    {
+      "id": 6,
+      "name": "Motor Cycle"
+    },
+    {
+      "id": 7,
+      "name": "Motor Tricycle\u200b"
+    },
+    {
+      "id": 8,
+      "name": "New Territories Taxi"
+    },
+    {
+      "id": 9,
+      "name": "Private Bus"
+    },
+    {
+      "id": 10,
+      "name": "Private Car"
+    },
+    {
+      "id": 11,
+      "name": "Private Light Bus\u200b"
+    },
+    {
+      "id": 12,
+      "name": "Public Bus\u200b"
+    },
+    {
+      "id": 13,
+      "name": "Red Minibus"
+    },
+    {
+      "id": 14,
+      "name": "Urban Taxi"
+    }
+  ],
+  "info": {
+    "year": 2023,
+    "version": "1.0",
+    "contributor": "Label Studio"
+  }
+}
