@@ -485,10 +485,10 @@ if __name__ == '__main__':
     parser.add_argument('--exist-ok', action='store_true', help='existing project/name ok, do not increment')
     opt = parser.parse_args()
 
-    opt.epochs = 30
+    opt.epochs = 150
     opt.batch_size = 64
     opt.cfg = 'cfg/yolov4-tiny.cfg'
-    opt.weights = 'weights/yolov4-tiny.weights'
+    opt.weights = 'weights/best.pt'
     
     # Set DDP variables
     opt.total_batch_size = opt.batch_size
