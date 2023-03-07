@@ -46,16 +46,6 @@ def create_modules(module_defs, img_size, cfg):
 
             if mdef['activation'] == 'leaky':  # activation study https://github.com/ultralytics/yolov3/issues/441
                 modules.add_module('activation', nn.LeakyReLU(0.1, inplace=True))
-            elif mdef['activation'] == 'swish':
-                modules.add_module('activation', Swish())
-            elif mdef['activation'] == 'mish':
-                modules.add_module('activation', Mish())
-            elif mdef['activation'] == 'emb':
-                modules.add_module('activation', F.normalize())
-            elif mdef['activation'] == 'logistic':
-                modules.add_module('activation', nn.Sigmoid())
-            elif mdef['activation'] == 'silu':
-                modules.add_module('activation', nn.SiLU())
 
         elif mdef['type'] == 'deformableconvolutional':
             bn = mdef['batch_normalize']
@@ -84,13 +74,7 @@ def create_modules(module_defs, img_size, cfg):
 
             if mdef['activation'] == 'leaky':  # activation study https://github.com/ultralytics/yolov3/issues/441
                 modules.add_module('activation', nn.LeakyReLU(0.1, inplace=True))
-            elif mdef['activation'] == 'swish':
-                modules.add_module('activation', Swish())
-            elif mdef['activation'] == 'mish':
-                modules.add_module('activation', Mish())
-            elif mdef['activation'] == 'silu':
-                modules.add_module('activation', nn.SiLU())
-                
+
         elif mdef['type'] == 'dropout':
             p = mdef['probability']
             modules = nn.Dropout(p)
@@ -208,7 +192,7 @@ def create_modules(module_defs, img_size, cfg):
                 bias.data[:, 4] += math.log(8 / (640 / stride[yolo_index]) ** 2)  # obj (8 objects per 640 image)
                 bias.data[:, 5:] += math.log(0.6 / (modules.nc - 0.99))  # cls (sigmoid(p) = 1/nc)
                 module_list[j][0].bias = torch.nn.Parameter(bias_, requires_grad=bias_.requires_grad)
-                
+
                 #j = [-2, -5, -8]
                 #for sj in j:
                 #    bias_ = module_list[sj][0].bias
