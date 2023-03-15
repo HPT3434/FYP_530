@@ -474,7 +474,7 @@ if __name__ == '__main__':
     opt = parser.parse_args()
 
     opt.data = 'data/FYP.yaml'
-    opt.epochs = 150
+    opt.epochs = 200
     opt.batch_size = 64
     opt.cfg = 'cfg/yolov4-tiny.cfg'
     opt.weights = 'weights/best.pt'
