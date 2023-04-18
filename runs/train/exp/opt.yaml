@@ -1,8 +1,8 @@
-weights: weights/best.pt
+weights: weights/yolov4-tiny.weights
 cfg: cfg/yolov4-tiny.cfg
 data: data/coco.yaml
 hyp: data/hyp.scratch.yaml
-epochs: 150
+epochs: 300
 batch_size: 64
 img_size:
 - 640
