@@ -1,3 +1,12 @@
+weights: weights/yolov4-tiny.weights
+cfg: cfg/yolov4-tiny.cfg
+data: data/coco.yaml
+hyp: data/hyp.scratch.yaml
+epochs: 300
+batch_size: 64
+img_size:
+- 640
+- 640
 rect: false
 resume: false
 nosave: false
@@ -14,20 +23,11 @@ adam: false
 sync_bn: false
 local_rank: -1
 log_imgs: 16
+workers: 8
 project: runs/train
 name: exp
 exist_ok: false
-data: data/FYP.yaml
-epochs: 150
-batch_size: 64
-cfg: cfg/yolov4-tiny.cfg
-weights: weights/best.pt
-hyp: data/hyp.scratch.yaml
-img_size:
-- 640
-- 640
-workers: 8
 total_batch_size: 64
 world_size: 1
 global_rank: -1
-save_dir: runs\train\exp9
+save_dir: runs\train\exp

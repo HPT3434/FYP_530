@@ -1,7 +1,7 @@
 # train and val datasets (image directory or *.txt file with image paths)
-train: C:\Users\anson\Desktop\FYP\code tset\530FYP\data\FYP\images\test
-val: C:\Users\anson\Desktop\FYP\code tset\530FYP\data\FYP\images\test
-test: C:\Users\anson\Desktop\FYP\code tset\530FYP\data\FYP\images\test
+train: data\FYP\images\train
+val: data\FYP\images\test
+test: data\FYP\images\test
 
 # number of classes
 nc: 15
