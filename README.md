@@ -11,3 +11,8 @@ _LAW, Tsz Wang (HKMU)_
 _TSANG, Hon Pong (HKMU)_
 
 __Here is some result of our project.__
+
+https://github.com/HPT3434/FYP_530/assets/69643533/7dd88967-3891-44c7-ada6-fa6760517334
+
+
+
